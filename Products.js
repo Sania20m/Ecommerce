@@ -77,7 +77,7 @@
 
 import {React,useState} from 'react';
 import AddToCart from './Add';
-import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
+import { Navbar, Container, Nav, Row, Col, NavLink } from 'react-bootstrap';
 import Cart from './Cart';
 import { useCart } from '../Component/CartContext';
 
@@ -116,14 +116,15 @@ const Products = () => {
   return (
     <div className="App">
       <Navbar className="justify-content-between" bg="dark" variant="dark">
-        <Container>
+        {/* <Container>
           <Navbar.Brand href="#home">Ecommerce</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#store">Store</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
+            
           </Nav>
-          </Container>
+          </Container> */}
           
         <Nav>
           <button className="cart-icon" onClick={handleToggleCart}>
